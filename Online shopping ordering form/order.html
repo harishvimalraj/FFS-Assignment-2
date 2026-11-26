@@ -1,0 +1,178 @@
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Order Form</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header><span class="corner-coin c1">₹</span><span class="corner-coin c2">₹</span><span
+            class="corner-coin c3">₹</span><span class="corner-coin c4">₹</span><span
+            class="decoration d1">🛍️</span><span class="decoration d2">🪙</span><span
+            class="decoration d3">💰</span><span class="decoration d4">🛍️</span>
+        <div><span class="bag small"></span><span class="bag"></span><span class="bag big"></span><span
+                class="coin">₹</span><span class="coin">₹</span></div>
+        <h1>Online Shopping Order Form</h1>
+        <p>Tech products and electrical appliances</p>
+        <div class="theme-control"><input id="theme-toggle" type="checkbox"><label for="theme-toggle">Light mode</label></div>
+    </header>
+    <main>
+        <form>
+            <section>
+                <h2>Customer and Shipping Details</h2>
+                <div class="grid">
+                    <label>Full name <span class="required">*</span><input type="text"
+                            placeholder="Enter your full name (e.g. Arun Kumar)" required></label>
+                    <label>Email <span class="required">*</span><input type="email" placeholder="name@example.com"
+                            required></label>
+                    <label>Phone number <span class="required">*</span><input type="text"
+                            placeholder="10-digit mobile number" pattern="[0-9]{10}" required></label>
+                    <label>Shipping address line 1 <span class="required">*</span><input type="text"
+                            placeholder="House no., street, area" required></label>
+                    <label>Shipping address line 2<input type="text"
+                            placeholder="Landmark, apartment (optional)"></label>
+                    <label>State <span class="required">*</span><select required>
+                            <option value="" disabled selected>Select your state</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Arunachal Pradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Chhattisgarh</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
+                            <option>Haryana</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Jharkhand</option>
+                            <option>Karnataka</option>
+                            <option>Kerala</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Maharashtra</option>
+                            <option>Manipur</option>
+                            <option>Meghalaya</option>
+                            <option>Mizoram</option>
+                            <option>Nagaland</option>
+                            <option>Odisha</option>
+                            <option>Punjab</option>
+                            <option>Rajasthan</option>
+                            <option>Sikkim</option>
+                            <option>Tamil Nadu</option>
+                            <option>Telangana</option>
+                            <option>Tripura</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Uttarakhand</option>
+                            <option>West Bengal</option>
+                        </select></label>
+                    <label>City <span class="required">*</span><select required>
+                            <option value="" disabled selected>Select your city</option>
+                            <option>Ahmedabad</option>
+                            <option>Bengaluru</option>
+                            <option>Bhopal</option>
+                            <option>Bhubaneswar</option>
+                            <option>Chandigarh</option>
+                            <option>Chennai</option>
+                            <option>Delhi</option>
+                            <option>Hyderabad</option>
+                            <option>Indore</option>
+                            <option>Jaipur</option>
+                            <option>Kochi</option>
+                            <option>Kolkata</option>
+                            <option>Lucknow</option>
+                            <option>Mumbai</option>
+                            <option>Patna</option>
+                            <option>Pune</option>
+                            <option>Surat</option>
+                            <option>Thiruvananthapuram</option>
+                        </select></label>
+                    <label>PIN code <span class="required">*</span><input type="text" placeholder="6-digit PIN code"
+                            pattern="[0-9]{6}" required></label>
+                </div>
+            </section>
+            <section>
+                <h2>Billing Address</h2><input id="billing-toggle" type="checkbox" checked><label
+                    for="billing-toggle">Billing address is the same as shipping address</label>
+                <div class="billing-fields"><label>Billing address line 1<input type="text"
+                            placeholder="House no., street, area"></label><label>Billing address line 2<input
+                            type="text" placeholder="Landmark, apartment (optional)"></label>
+                    <label>Billing city<select>
+                            <option value="" disabled selected>Select your city</option>
+                            <option>Ahmedabad</option>
+                            <option>Bengaluru</option>
+                            <option>Chennai</option>
+                            <option>Delhi</option>
+                            <option>Hyderabad</option>
+                            <option>Kolkata</option>
+                            <option>Mumbai</option>
+                            <option>Pune</option>
+                        </select></label>
+                    <label>Billing state<select>
+                            <option value="" disabled selected>Select your state</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Delhi</option>
+                            <option>Gujarat</option>
+                            <option>Karnataka</option>
+                            <option>Kerala</option>
+                            <option>Maharashtra</option>
+                            <option>Rajasthan</option>
+                            <option>Tamil Nadu</option>
+                            <option>Telangana</option>
+                            <option>Uttar Pradesh</option>
+                            <option>West Bengal</option>
+                        </select></label>
+                    <label>Billing PIN code<input type="text" placeholder="6-digit PIN code" pattern="[0-9]{6}"></label>
+                </div>
+            </section>
+            <section>
+                <h2>Order Details</h2>
+                <div class="grid"><label>Order notes or delivery instructions<textarea
+                            placeholder="Any delivery instructions (optional)" rows="3"></textarea></label>
+                    <label>Product <span class="required">*</span><select required>
+                            <option value="" disabled selected>Select a product</option>
+                            <option>Laptop</option>
+                            <option>Smartphone</option>
+                            <option>Wireless Headphones</option>
+                            <option>Smart Watch</option>
+                            <option>LED TV</option>
+                            <option>Air Fryer</option>
+                            <option>Mixer Grinder</option>
+                            <option>Power Bank</option>
+                        </select></label>
+                    <label>Size/Variant <span class="required">*</span><select required>
+                            <option value="" disabled selected>Select size or variant</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select></label>
+                    <label>Color <span class="required">*</span><select required>
+                            <option value="" disabled selected>Select a color</option>
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Silver</option>
+                            <option>Blue</option>
+                        </select></label>
+                    <label>Quantity <span class="required">*</span><input type="number" min="1"
+                            placeholder="Enter quantity (e.g. 1)" required></label>
+                    <label>Payment method <span class="required">*</span><select required>
+                            <option value="" disabled selected>Select payment method</option>
+                            <option>UPI</option>
+                            <option>Credit Card</option>
+                            <option>Debit Card</option>
+                            <option>Net Banking</option>
+                            <option>Wallet</option>
+                            <option>Cash on Delivery</option>
+                        </select></label>
+                </div>
+                
+            </section>
+            <div class="buttons"><button type="button" onclick="window.print()">Save as PDF</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
